@@ -1,3 +1,6 @@
+
+
+
 mkdir mynewproject : create new folder name "mynewproject" (make directory)
 cd mynewproject: open that folder (change directory)
 git init: Initialize a new Git repository or database
