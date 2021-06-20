@@ -1,0 +1,50 @@
+mkdir mynewproject : create new folder name "mynewproject" (make directory)
+cd mynewproject: open that folder (change directory)
+git init: Initialize a new Git repository or database
+type > file.extension (type nul > DONE.txt) : create new file
+
+git init : Initialize a new git database
+git clone <url> : Copy an existing database
+git status : Check the status of the local project from the lastest commit (whole project)
+git diff : Review the changes done to the project from the last commit (only staged files)
+git diff <name> : check the changes made to specific file (not entire staged files in project)
+git add <file> : Tell Git to track a changed file
+git commit -m "<comment>" : Save the current state of the project to database, use git diff --staged to checked what done to these staged file
+git push : Copy the local database to a remote server
+git pull (git pull origin master) : Copy a remote database to a local machine
+git log : Check the history of the project
+git log --oneline : same with git log but prettier result
+git branch <branchName> : create branch from current branch
+git branch -D <branchName> : delete branch
+git brach : Show all branches
+git checkout <branchName>: Swith to that branch
+git merge <branchNameSource> : Merge the history of two branches together (switch to branch target first and then merge from branch Source)
+    merge mean rep all commits on 1 branch to another branch
+$ git stash # Keep the current changes stashed away to be used later
+git checkout <git log name>: project come back at this git log time (project quay trở lại trạng thái ở thời điểm đấy) - snapshot Ver
+git revert <git log name> : Thay đổi project hiện tại bằng phiên bản trong quá khứ (Real comeback)
+git checkout master : comback to current 
+$ git rm --cached <fileName> : unstage a file after using git add 
+git diff --name-only --cached : Show all file are staged
+git show <name 5 letter> : Show all changes of this commit (git log name)
+git commit --amend: change "comment" after commit
+:q :Exit 
+
+git remote add <remote_name> <link> link local repos to remote repos
+(git remote add origin https://github.com/mtsitoara/todo-list.git)
+
+git push <remote_name> <branch_name> : push takes your current branch and copies all its commit to remote branch and create brand if it doesn't exist on server
+(git push origin master)
+
+git pull <remote_name> <branch_name> : it looks remote branch and copy all of it to your local repository
+(git pull origin master)Make sure to always be on the branch corresponding on the one you are pulling before running any command
+
+git commit : write commit message with line break (footer, See: #number for linked to Issues, Resolve #number to close Issue)
+
+So the basic steps when using Git are
+• Make changes (in the Working Directory)
+• Stage every changed file (in the Staging Index)
+• Commit the project (in the Repository)
+
+git config --local credential.helper ""
+
